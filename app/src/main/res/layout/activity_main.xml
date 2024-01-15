@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" app:layout_anchorGravity="center" android:id="@+id/constraintLayout"
+            app:layout_anchor="@+id/constraintLayout">
+
+        <TextView
+                android:text="Calculadora IMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/CalculadoraIMC"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="46dp" android:textSize="34sp" android:textColor="#1C2DA1"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Resultado Do Calculo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/resultadoDoCalculo"
+                tools:layout_editor_absoluteY="161dp"
+                tools:layout_editor_absoluteX="139dp" android:textColor="#131A49" android:textSize="16sp"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Classificao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/classificao" tools:layout_editor_absoluteY="237dp"
+                tools:layout_editor_absoluteX="171dp" android:textSize="16sp" android:textColor="#131A49"
+                android:textStyle="bold"/>
+        <TextView
+                android:text="Altura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/altura" tools:layout_editor_absoluteY="337dp"
+                tools:layout_editor_absoluteX="187dp" android:textSize="16sp" android:textColor="#131A49"
+                android:textStyle="bold"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextNumberDecimal" tools:layout_editor_absoluteY="356dp"
+                tools:layout_editor_absoluteX="100dp"/>
+        <TextView
+                android:text="Peso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/Peso" tools:layout_editor_absoluteY="451dp"
+                tools:layout_editor_absoluteX="189dp" android:textStyle="bold" android:textColor="#131A49"
+                android:textSize="16sp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/editTextNumberDecimal2" tools:layout_editor_absoluteY="470dp"
+                tools:layout_editor_absoluteX="100dp"/>
+        <Button
+                android:text="Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/button" tools:layout_editor_absoluteY="557dp"
+                tools:layout_editor_absoluteX="160dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
